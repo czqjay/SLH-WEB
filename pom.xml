@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SLH</groupId>
+	<artifactId>slh-web</artifactId>
+	<packaging>war</packaging>
+	<version>1.4</version>
+	<name>slh-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		  
+		<dependency>
+			<groupId>SLH</groupId>
+			<artifactId>slh-src</artifactId>
+			<version>1.4</version>
+			<scope>provided</scope>
+		</dependency>
+   
+
+
+	</dependencies>
+	<build>
+		<finalName>slh-web</finalName>
+	</build>
+	
+	  <distributionManagement>
+    <repository>
+      <id>archiva.internal</id>
+      <name>Internal Release Repository</name>
+      <url>http://test.longerinfo.com:8111/repository/internal/</url>
+    </repository>
+    <snapshotRepository>
+      <id>archiva.snapshots</id> 
+      <name>Internal Snapshot Repository</name>
+      <url>http://test.longerinfo.com:8111/repository/snapshots/</url> 
+    </snapshotRepository>
+  </distributionManagement> 
+	
+</project>

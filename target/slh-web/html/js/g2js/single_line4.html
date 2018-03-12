@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>简单线图</title>
+    <script src="https://a.alipayobjects.com/jquery/jquery/1.11.1/jquery.js"></script>
+    <script src="https://a.alipayobjects.com/g/datavis/g2/2.3.6/index.js"></script>
+  </head>
+  <body>
+    <div id="c1"></div>
+    <script>
+      var data = [
+        {month: '2017', temperature: 7.0},
+        {month: '2018', temperature: 6.9},
+        {month: '2019', temperature: 9.5},
+        {month: '2020', temperature: 14.5},
+        {month: '2021', temperature: 18.2},
+        {month: '2022', temperature: 21.5}
+       
+      ];
+      var chart = new G2.Chart({
+        id: 'c1',
+        forceFit: true,
+        height: 450
+      });
+      chart.source(data, {
+        month: {
+          alias: '月份',
+          range: [0, 1]
+        },
+        temperature: {
+          alias: '计划安排资金(单位:万)'
+        }
+      });
+      chart.line().position('month*temperature').size(2);
+      chart.render();
+    </script>
+  </body>
+</html>

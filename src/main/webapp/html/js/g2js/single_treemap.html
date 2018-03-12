@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="gbk">
+    <title>treemap</title>
+    <script src="https://a.alipayobjects.com/jquery/jquery/1.11.1/jquery.js"></script>
+    <script src="https://a.alipayobjects.com/g/datavis/g2/2.3.4/index.js"></script>
+  </head>
+  <body>
+    <div id="c1"></div> 
+    <script>
+      var Stat = G2.Stat;
+
+  
+  
+  
+        // 因为只有第一层的手机数据存在品牌（brand）字段，所以，将所有手机型号，增加brand字段
+      
+        
+          var s  = '[{"name":"土地","brand":"土地","value":25.09647118932181,"children":{}},{"name":"资金","brand":"资金","value":16.711901453726654,"children":{}},{"name":"人才","brand":"人才","value":8.45923464256909,"children":{}},{"name":"税收","brand":"税收","value":8.168930119898944,"children":{}},{"name":"其他","brand":"其他","value":6.860016513545617,"children":{}},{"name":"土地5","brand":"土地5","value":6.6900485928653595,"children":{}},{"name":"土地2","brand":"土地2","value":4.83119057920539,"children":{}},{"name":"土地6","brand":"土地6","value":4.724206371886631,"children":{}},{"name":"土地41112","brand":"土地4","value":4.600366818169094,"children":{}},{"name":"土地41111","brand":"土地4","value":1.6772881053417859,"children":{}}]'
+        data =JSON.parse(s) 
+          
+        function processData (data) {
+          for(var i = 0; i < data.length ; i++) { 
+            var node = data[i];
+            if (node.children) {
+              for (var j = 0; j < node.children.length; j++) {  
+                node.children[j].brand = node.brand;
+              }
+            }
+          }
+        }
+        processData(data);
+        var chart = new G2.Chart({
+          id: 'c1',
+          forceFit: true,
+          height: 450,
+          plotCfg: {
+            margin: 0
+          }
+        });
+        chart.source(data);
+        chart.tooltip({
+          map: {
+            title: 'brand',
+            name: 'name',
+            value: 'value',
+            c:'c'
+          }
+        });
+        chart.axis(false);
+        chart.legend(false); 
+        chart.polygon().position(Stat.treemap('children*value*name')).color('name') 
+          .label('brand*..level*value',function(name, level, value){
+          if (level === 0 && value > 0.2) { // 只有第一层的，同时占比超过 0.2
+            return name;
+          }
+        }, {
+          offset: 2,
+          label:{
+            'fontSize': 12, 
+            'fontWeight': 'bold',
+            fill: '#000',
+            shadowBlur: 10,
+            shadowColor: '#fff'
+          }
+        })
+          .style({
+          stroke: '#fff',
+          lineWidth: 1 
+        });
+       // #cad7dd
+     
+        chart.render();
+ 
+    </script>
+  </body>
+</html>

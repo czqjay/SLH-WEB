@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<short-name>ui</short-name>
+	<uri>/sunit-ui</uri>
+	<tag-file>
+		<name>grid</name>
+		<path>/META-INF/tags/sunittag/grid.tag</path>
+	</tag-file>
+	<tag-file>
+		<name>gridCell</name>
+		<path>/META-INF/tags/sunittag/gridCell.tag</path>
+	</tag-file>
+
+	<tag-file>
+		<name>input</name>
+		<path>/META-INF/tags/sunittag/input.tag</path>
+	</tag-file> 
+
+	<tag-file>
+		<name>field</name>
+		<path>/META-INF/tags/sunittag/field.tag</path>
+	</tag-file>
+
+	<tag-file>
+		<name>panel</name>
+		<path>/META-INF/tags/sunittag/panel.tag</path>
+	</tag-file>
+
+	<tag-file>
+		<name>validate</name>
+		<path>/META-INF/tags/sunittag/validate.tag</path>
+	</tag-file>
+
+	<tag-file>
+		<name>option</name>
+		<path>/META-INF/tags/sunittag/option.tag</path> 
+	</tag-file>
+
+	<tag-file>
+		<name>button</name> 
+		<path>/META-INF/tags/sunittag/button.tag</path> 
+	</tag-file>
+	
+	<tag-file> 
+		<name>tree</name> 
+		<path>/META-INF/tags/sunittag/tree.tag</path> 
+	</tag-file> 
+	
+	<tag-file> 
+		<name>select</name> 
+		<path>/META-INF/tags/sunittag/select.tag</path> 
+	</tag-file> 
+	
+	<tag-file>  
+		<name>authorization</name> 
+		<path>/META-INF/tags/sunittag/authorization.tag</path> 
+	</tag-file>
+	 
+	<tag-file>   
+		<name>comboFile</name> 
+		<path>/META-INF/tags/sunittag/comboFile.tag</path> 
+	</tag-file>
+	
+	<tag-file>    
+		<name>checkbox</name>  
+		<path>/META-INF/tags/sunittag/checkbox.tag</path> 
+	</tag-file>
+	
+	<tag-file>     
+		<name>portlet</name>  
+		<path>/META-INF/tags/sunittag/portlet.tag</path> 
+	</tag-file>
+	
+</taglib>
