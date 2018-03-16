@@ -16,6 +16,8 @@
 %>
 <html > 
 	<head>  
+	<script src="${ctxPath}/html/js/g2js/js/g2.min.js"></script>
+		<script src="${ctxPath}/html/js/g2js/js/data-set.min.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>sunit系统</title>

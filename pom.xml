@@ -4,7 +4,7 @@
 	<groupId>SLH</groupId>
 	<artifactId>slh-web</artifactId>
 	<packaging>war</packaging>
-	<version>1.4</version>
+	<version>1.5</version>
 	<name>slh-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -12,11 +12,9 @@
 		<dependency>
 			<groupId>SLH</groupId>
 			<artifactId>slh-src</artifactId>
-			<version>1.4</version>
+			<version>1.5</version>
 			<scope>provided</scope>
 		</dependency>
-   
-
 
 	</dependencies>
 	<build>
