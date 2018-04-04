@@ -91,7 +91,33 @@
 										}
 									}, 
 									delSysresouce: function(t,m){
-										log('delSysresouce') 
+										log('delSysresouce')
+										var id = t[0].dtnode.data.id;
+										if (!confirm("是否要删除所选记录？")) {
+											return;
+										} 
+										$.ajax({   
+													type : "post", 
+													url : window.WWWROOT + "/sysresource/delSysResource.action",
+													data : {
+														ids : id 
+													},   
+													dataType : 'json',
+													success : function(data) { 
+														if (data && data.success) {
+															$.alert("已经删除成功。");
+															t[0].dtnode.remove();
+														} else {
+															$.alert("删除失败，原因：" + data.msg);
+														}
+													},
+													error : function(XMLHttpRequest, textStatus,
+															errorThrown) {
+														$.alert("删除失败，请稍后再次尝试删除！！");
+													}
+												});
+										
+										
 									}
 								},
 								ctrSub:function(t,m){

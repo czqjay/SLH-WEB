@@ -15,6 +15,7 @@
 
 <%@ attribute name="showType" type="java.lang.String" required="false"%>  <%--  文件列表展示方式 --%> 
 
+<%@ attribute name="prefix" type="java.lang.String" required="false"%>  
  
 
 
@@ -32,9 +33,9 @@
 	application.setAttribute(name+"_size",size); 
 	application.setAttribute(name+"_subDir",subDir); 
 	 
-	%>
+	%> 
 
-	var comboFile${id} =  $('#${id}').comboFile({showType:${showType}}).data('comboFile');  
+	var comboFile${id} =  $('#${id}').comboFile({showType:${showType},prefix:'${prefix}'}).data('comboFile');  
 	comboFile${id}.setList('${value}');
 </script>   
  

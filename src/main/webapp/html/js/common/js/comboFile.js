@@ -105,7 +105,8 @@
 			collision: "none"
 		},
 		// callbacks
-		change: null, 
+		change: null,
+		prefix:null,
 		showType:0 , //0 精简模式  下拉按钮显示与隐藏文件列表 ,   1 复杂模式, div显示文件列表,不隐藏
 		close: null,  
 		focus: null,
@@ -212,6 +213,11 @@
 			var $file =this.element.clone();
 			var $button =this.element.butUpload;
 			$file.show();
+			if(this.options.prefix){
+				var  namestr = $file.attr('name');
+				$file.attr('name', this.options.prefix+namestr)
+			}
+				   
 			$file.width('65px'); 
 			$file.height('25px');
 			$file.css({'opacity':'0','filter':'alpha(opacity=0)'});

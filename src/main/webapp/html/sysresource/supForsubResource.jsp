@@ -148,11 +148,10 @@ var supForsubResource;
 		
 		$('#supForsubResourceUnitbox').css('height',$('div .navTab-panel').height());
 	});      
-</script>        
+</script>         
     <div id='supForsubResourceUnitbox'  >      
 		 <div id='pageLeftForDept' style="float: left;width:40%;height:100% ">  
-			<sui:tree  id="supForsubResource"  checkbox="false"  postProcess ="supForsubResource.postProcess" 
-			onready='supForsubResource.onready' 
+			<sui:tree  id="supForsubResource"  checkbox="false"  postProcess ="supForsubResource.postProcess"  postData="root" 
 		 	   buttons="{class:'ui-state-default ui-corner-all x10',onclick:'supForsubResource.fillSels()',id:'saveToSelectForRole',name:'添加菜单',operator:'role_setUser_save'},
 		 	   			{class:'ui-state-default ui-corner-all x10',onclick:'supForsubResource.editMeun()',id:'editMeun',name:'编辑菜单',operator:'editMeun'},
 		 	   			{class:'ui-state-default ui-corner-all x10',onclick:'supForsubResource.delMeun()',id:'delMeun',name:'删除菜单',operator:'delMeun'}"  	
