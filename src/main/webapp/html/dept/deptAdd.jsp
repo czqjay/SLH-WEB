@@ -34,9 +34,9 @@ label {
 				callback="deptFormCRUD.saveOrUpdate"></sui:validate>
 			<form id="deptFormAdd" method="post"
 				action='${ctxPath}/dept/deptSave.action'>
-				
+				 
 				<sui:field type="input">
-					<sui:input title="部门编号：" size="x30"require="true">
+					<sui:input title="部门编号：" size="x30" require="true">
 					
 						<input type="text" name="deptno" id ='deptno'  remoteMessage='部门编号已存在' remote='${ctxPath}/dept/isExists.action' maxlength="200"
 						digitLetter="true"	required="true" />

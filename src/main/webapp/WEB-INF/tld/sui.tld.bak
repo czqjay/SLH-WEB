@@ -8,71 +8,71 @@
 	<uri>/sunit-ui</uri>
 	<tag-file>
 		<name>grid</name>
-		<path>/WEB-INF/tags/sunittag/grid.tag</path>
+		<path>sunittag/grid.tag</path>
 	</tag-file>
 	<tag-file>
 		<name>gridCell</name>
-		<path>/WEB-INF/tags/sunittag/gridCell.tag</path>
+		<path>sunittag/gridCell.tag</path>
 	</tag-file>
 
 	<tag-file>
 		<name>input</name>
-		<path>/WEB-INF/tags/sunittag/input.tag</path>
+		<path>sunittag/input.tag</path>
 	</tag-file> 
 
 	<tag-file>
 		<name>field</name>
-		<path>/WEB-INF/tags/sunittag/field.tag</path>
+		<path>sunittag/field.tag</path>
 	</tag-file>
 
 	<tag-file>
 		<name>panel</name>
-		<path>/WEB-INF/tags/sunittag/panel.tag</path>
+		<path>sunittag/panel.tag</path>
 	</tag-file>
 
 	<tag-file>
 		<name>validate</name>
-		<path>/WEB-INF/tags/sunittag/validate.tag</path>
+		<path>sunittag/validate.tag</path>
 	</tag-file>
 
 	<tag-file>
 		<name>option</name>
-		<path>/WEB-INF/tags/sunittag/option.tag</path> 
+		<path>sunittag/option.tag</path> 
 	</tag-file>
 
 	<tag-file>
 		<name>button</name> 
-		<path>/WEB-INF/tags/sunittag/button.tag</path> 
+		<path>sunittag/button.tag</path> 
 	</tag-file>
 	
 	<tag-file> 
 		<name>tree</name> 
-		<path>/WEB-INF/tags/sunittag/tree.tag</path> 
+		<path>sunittag/tree.tag</path> 
 	</tag-file> 
 	
 	<tag-file> 
 		<name>select</name> 
-		<path>/WEB-INF/tags/sunittag/select.tag</path> 
+		<path>sunittag/select.tag</path> 
 	</tag-file> 
 	
 	<tag-file>  
 		<name>authorization</name> 
-		<path>/WEB-INF/tags/sunittag/authorization.tag</path> 
+		<path>sunittag/authorization.tag</path> 
 	</tag-file>
 	 
 	<tag-file>   
 		<name>comboFile</name> 
-		<path>/WEB-INF/tags/sunittag/comboFile.tag</path> 
+		<path>sunittag/comboFile.tag</path> 
 	</tag-file>
 	
 	<tag-file>    
 		<name>checkbox</name>  
-		<path>/WEB-INF/tags/sunittag/checkbox.tag</path> 
+		<path>sunittag/checkbox.tag</path> 
 	</tag-file>
 	
 	<tag-file>     
 		<name>portlet</name>  
-		<path>/WEB-INF/tags/sunittag/portlet.tag</path> 
+		<path>sunittag/portlet.tag</path> 
 	</tag-file>
 	
 </taglib>
